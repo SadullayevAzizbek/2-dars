@@ -4,7 +4,7 @@ const ListItem = ({ text, isComplate }) => {
   return (
     <li className="d-flex align-items-center my-3">
       {isComplate ? (
-        <input className="form-check-input" checked type="checkbox" />
+        <input className="form-check-input" defaultChecked={isComplate} type="checkbox" />
       ) : (
         <input className="form-check-input" type="checkbox" />
       )}

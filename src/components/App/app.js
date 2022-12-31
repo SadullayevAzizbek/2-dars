@@ -36,8 +36,8 @@ const App = () => {
     </form>
    <List>
       {
-        todos.map(item=>(
-          <ListItem  isComplate={item.isComplate} text={item.text}/>
+        todos.map((item,ind)=>(
+          <ListItem key={ind} isComplate={item.isComplate} text={item.text}/>
         ))
       }
    </List>
